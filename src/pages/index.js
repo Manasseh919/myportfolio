@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/developer-pic-1.png";
+import myprofile from "../../public/images/profile/Subject2.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
