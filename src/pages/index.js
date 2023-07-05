@@ -31,9 +31,10 @@ export default function Home() {
               />
               <p className="my-4 text-base font-medium">
                 As a skilled full-stack developer, I am dedicated to turning
-                ideas into innovative web applications. Explore my latest
-                projects and articles, showcasing my expertise in React.js and
-                web development.
+                ideas into innovative web and mobile applications. Explore my
+                latest projects and articles, showcasing my expertise in
+                React.js, next js, react native, mobile application development
+                and web development.
               </p>
               <div className="flex items-center self-start mt-2">
                 <Link
@@ -43,9 +44,13 @@ export default function Home() {
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:text-dark hover:bg-light border-2 border-solid border-transparent hover:border-dark"
                 >
                   Resume
-                  <LinkArrow className={"w-6 ml-1"}/>
+                  <LinkArrow className={"w-6 ml-1"} />
                 </Link>
-                <Link href="mailto:manasseh919@gmail.com" target={"_blank"} className="ml-4 text-lg font-medium capitalize text-dark underline">
+                <Link
+                  href="mailto:manasseh919@gmail.com"
+                  target={"_blank"}
+                  className="ml-4 text-lg font-medium capitalize text-dark underline"
+                >
                   Contact
                 </Link>
               </div>
