@@ -9,9 +9,9 @@ const Footer = () => {
         <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
         <div className="flex items-center">
           Built With <span className="text-primary text-2xl px-2">&#9825;</span> by &nbsp;
-          <Link href="/">Manasseh</Link>
+          <Link href="/" className="underline underline-offset-2">Manasseh</Link>
         </div>
-        <Link href="">Say Hello</Link>
+        <Link href="" target={"_blank"} className="underline underline-offset-2">Say Hello</Link>
       </Layout>
     </footer>
   );
