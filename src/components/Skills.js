@@ -1,5 +1,6 @@
 import React from "react";
-import { motion } from "framer-motion";
+
+import { motion, useScroll } from "framer-motion";
 
 const Skill = ({ name, x, y }) => {
   return (
