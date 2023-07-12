@@ -48,19 +48,19 @@ const about = () => {
                 Myself
               </h2>
               <p className="font-medium ">
-                Hi, I'm Manasseh, a mobile app and a web developer with a
+                Hi, I&apos;m Manasseh, a mobile app and a web developer with a
                 passion for creating beautiful, functional, and user-centered
                 digital experiences. With 2 years of experience in the field. I
                 am always looking for new and innovative ways to bring my
-                clients' visions to life.
+                clients&apos; visions to life.
               </p>
               <p className="font-medium  my-4">
                 I believe that coding is about more than just writing lines of
-                code – it's about solving problems and creating efficient,
+                code – it&apos;s about solving problems and creating efficient,
                 robust software solutions for users.
               </p>
               <p className="font-medium ">
-                Whether I'm working on a website, mobile app, or other digital
+                Whether I&apos;m working on a website, mobile app, or other digital
                 product, I bring my commitment to code excellence and
                 user-centered thinking to every project I work on. I look
                 forward to the opportunity to apply my skills and passion to
