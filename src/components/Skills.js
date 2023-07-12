@@ -41,6 +41,7 @@ const Skills = () => {
         <Skill name="NEXT JS" x="-11vw" y="19vw" />
         <Skill name="TAILWIND CSS" x="-3vw" y="25vw" />
         <Skill name="STYLED COMPONENT" x="-30vw" y="-5vw" />
+        <Skill name="TYPESCRIPT" x="-10vw" y="-5vw" />
        
       </div>
     </>

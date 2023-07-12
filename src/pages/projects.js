@@ -6,6 +6,15 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import project1 from "../../public/images/projects/second.png";
+import stack from "../../public/images/projects/stackoverflow.png";
+import productfeedback from "../../public/images/projects/productfeedback.png";
+import laundry from "../../public/images/projects/laundry.png";
+import trello from "../../public/images/projects/trello.png";
+
+
+import { motion } from "framer-motion";
+
+const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -16,7 +25,13 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         target="_blank"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+        />
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
         <span className="text-primary font-medium text-xl">{type}</span>
@@ -54,7 +69,13 @@ const Project = ({ title, type, img, link, github }) => {
         target="_blank"
         className="w-full cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+        />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
         <span className="text-primary font-medium text-xl">{type}</span>
@@ -102,7 +123,7 @@ const projects = () => {
                 title="Church App"
                 summary="This project was built using react native and firebase. The app is was built for Charlotte Immanuel Church of all nations.Users can get access to church videos and events and other things. You can get access to the apps on both Playstore and App store by searching Charlotte Immanuel"
                 link="https://play.google.com/store/apps/details?id=com.manasseh919.charlotte"
-                type="Featured Project"
+                type="Client Project"
                 img={project1}
                 github="/"
               />
@@ -111,49 +132,51 @@ const projects = () => {
             <div className="col-span-6">
               <Project
                 title="Stack Overflow Clone"
-                summary="This project was built using react js next js and framer motion "
-                link="/"
-                type="Featured Project"
-                img={project1}
-                github="/"
+                link="https://github.com/Manasseh919/stack_over_flow"
+                type="Personal Project"
+                img={stack}
+                github="https://github.com/Manasseh919/stack_over_flow"
               />
             </div>
             <div className="col-span-6">
               <Project
-                title="Twitter Clone"
-                summary="This project was built using react js next js and framer motion "
-                link="/"
+                title="Frontend Mentor Project"
+                link="https://manasseh-project.netlify.app/"
                 type="Featured Project"
-                img={project1}
-                github="/"
+                img={productfeedback}
+                github="https://github.com/Manasseh919/amalitech-training-project"
               />
             </div>
             <div className="col-span-12">
-              <FeaturedProject
-                title="Church App"
+              {/* <FeaturedProject
+                title="Twitter Clone(Full Stack)"
                 summary="This project was built using react native and firebase. The app is was built for Charlotte Immanuel Church of all nations.Users can get access to church videos and events and other things. You can get access to the apps on both Playstore and App store by searching Charlotte Immanuel"
                 link="https://play.google.com/store/apps/details?id=com.manasseh919.charlotte"
                 type="Featured Project"
                 img={project1}
                 github="/#"
+              /> */}
+            </div>
+            <div className="col-span-6">
+              {" "}
+              <Project
+                title="Laundry App"
+                link="https://github.com/Manasseh919/Full-Stack-Laundry"
+                type="Personal Project"
+                img={laundry}
+                github="https://github.com/Manasseh919/Full-Stack-Laundry"
               />
             </div>
-            <div className="col-span-6"> <Project
-                title="Twitter Clone"
-                summary="This project was built using react js next js and framer motion "
-                link="/"
-                type="Featured Project"
-                img={project1}
-                github="/"
-              /></div>
-            <div className="col-span-6"> <Project
-                title="Twitter Clone"
-                summary="This project was built using react js next js and framer motion "
-                link="/"
-                type="Featured Project"
-                img={project1}
-                github="/"
-              /></div>
+            <div className="col-span-6">
+              {" "}
+              <Project
+                title="Trello Clone"
+                link="https://github.com/Manasseh919/My_personal-_Daily_Task_Manager"
+                type="Personal Project"
+                img={trello}
+                github="https://github.com/Manasseh919/My_personal-_Daily_Task_Manager"
+              />
+            </div>
           </div>
         </Layout>
       </main>
